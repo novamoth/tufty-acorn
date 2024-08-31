@@ -1,0 +1,53 @@
+{
+  "name": "Alien Alliance",
+  "members": [
+    {
+      "id": "wreda",
+      "name": "Stella",
+      "pronouns": "She/her",
+      "description": "Programmer, queer, host.",
+      "palette": {
+        "color_text": "#e01f3f",
+        "color_system_text": "#e01f3f",
+        "color_bg": "#271d2c",
+        "color_system_bg": "#7b6960"
+      }
+    },
+    {
+      "id": "skiyd",
+      "name": "Lily",
+      "pronouns": "She/her",
+      "description": "Former Prosecutor? Slightly Little? Idk I am the ONLY one who knows how to do anything right!!",
+      "palette": {
+        "color_text": "#623e3e",
+        "color_system_text": "#8b6e59",
+        "color_bg": "#aea46e",
+        "color_system_bg": "#c4d284"
+      }
+    },
+    {
+      "id": "oinmw",
+      "name": "Ezia",
+      "pronouns": "She/fae",
+      "description": "Showy! Eccentric! Fun! <3",
+      "palette": {
+        "color_text": "#cecece",
+        "color_system_text": "#6f9edf",
+        "color_bg": "#42678e",
+        "color_system_bg": "#102533"
+      }
+    },
+    {
+      "id": "vcbjl",
+      "name": "Molly",
+      "pronouns": "it/its",
+      "description": "The *most* giggly creature you've ever seen.",
+      "palette": {
+        "color_text": "#2176cc",
+        "color_system_text": "#e8e7cb",
+        "color_bg": "#ff7d6e",
+        "color_system_bg": "#fca6ac"
+      }
+    }
+  ]
+}
