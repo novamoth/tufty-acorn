@@ -126,8 +126,8 @@ def draw_badge():
 
     # draw company text
     display.set_pen(color_system_text)
-    display.set_font("bitmap6")
-    display.text(SYSTEM_NAME, PADDING, PADDING, WIDTH, 3)
+    display.set_font("bitmap8")
+    display.text(SYSTEM_NAME, PADDING, PADDING+5, WIDTH, 2.5)
 
     # draw name text
     display.set_pen(color_text)
@@ -245,4 +245,3 @@ while True:
         draw_ccb(ccb)
         display.update()
         time.sleep(1)
-
