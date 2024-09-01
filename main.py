@@ -127,12 +127,28 @@ def draw_badge():
     # draw company text
     display.set_pen(color_system_text)
     display.set_font("bitmap8")
-    display.text(SYSTEM_NAME, PADDING, PADDING+5, WIDTH, 2.5)
+    system_default_scale = 5
+    while True:
+        sysSize = display.measure_text(SYSTEM_NAME, system_default_scale)
+        if sysSize < (WIDTH-PADDING*2):
+            print(system_default_scale)
+            display.text(SYSTEM_NAME, PADDING, int(system_default_scale * 8 / 2 ) + PADDING, WIDTH, system_default_scale)
+            break
+        system_default_scale-=0.5
+    # display.text(SYSTEM_NAME, PADDING, PADDING+5, WIDTH, 2.5)
 
     # draw name text
     display.set_pen(color_text)
     display.set_font("bitmap8")
-    display.text(alterName, PADDING * 3 + IMAGE_SIZE, PADDING*2 + COMPANY_HEIGHT, WIDTH, 5)
+    name_default_scale = 4
+    while True:
+        nameSize = display.measure_text(alterName, name_default_scale)
+        if nameSize < (WIDTH - PADDING * 3 - IMAGE_SIZE):
+            print(name_default_scale)
+            display.text(alterName, PADDING * 3 + IMAGE_SIZE, int(name_default_scale * 8 / 2) + PADDING + COMPANY_HEIGHT, WIDTH, name_default_scale)
+            break
+        name_default_scale-=0.05
+    # display.text(alterName, PADDING * 3 + IMAGE_SIZE, PADDING*2 + COMPANY_HEIGHT, WIDTH, 5)
     
     # draw pronoun text
     display.set_pen(color_text)
@@ -245,3 +261,4 @@ while True:
         draw_ccb(ccb)
         display.update()
         time.sleep(1)
+
